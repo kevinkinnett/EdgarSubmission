@@ -26,11 +26,7 @@ public class Program
 
         edgarSubmission submission;
 
-        var serializer = new XmlSerializer(typeof(edgarSubmission));
-        using (var fileStream = new FileStream("Data/primary_doc.xml", FileMode.Open))
-        {
-            submission = (edgarSubmission)serializer.Deserialize(fileStream);
-        }
+        submission = DeserializeXml<edgarSubmission>("Data/primary_doc.xml");
 
         //submission.formData.invstOrSecs
         var config = new MapperConfiguration(cfg =>
@@ -58,6 +54,15 @@ public class Program
         logger.LogInformation("end");
 
 
+    }
+
+    private static T DeserializeXml<T>(string path) where T : class
+    {
+       
+        using var fileStream = new FileStream(path, FileMode.Open);
+        var submission = new XmlSerializer(typeof(T)).Deserialize(fileStream)! as T;
+
+        return submission;
     }
 
     static void WriteCsv<T>(IEnumerable<T> items, string path)
