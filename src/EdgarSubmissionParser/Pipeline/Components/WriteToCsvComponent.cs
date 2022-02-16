@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Text;
 using AutoMapper;
 using EdgarSubmissionParser.Model;
 using EdgarSubmissionParser.Pipeline.Payloads;
@@ -25,18 +26,26 @@ public class WriteToCsvComponent : AsyncPipelineComponentBase<PipelinePayload>
         return await Task.FromResult(payload);
     }
 
-    static void WriteCsv<T>(IEnumerable<T> items, string path)
+    internal static void WriteCsv<T>(IEnumerable<T> items, string path)
+    {
+        using var writer = new StreamWriter(path);
+        writer.WriteLine(BuildCsvLog(items));
+    }
+
+    internal static StringBuilder BuildCsvLog<T>(IEnumerable<T> items)
     {
         var itemType = typeof(T);
         var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
             .OrderBy(p => p.Name);
 
-        using var writer = new StreamWriter(path);
+        var builder = new StringBuilder();
 
-        writer.WriteLine(string.Join(", ", props.Select(p => p.Name)));
+        builder.AppendLine(string.Join(", ", props.Select(p => p.Name)));
 
         foreach (var item in items)
-            writer.WriteLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
+            builder.AppendLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
+
+        return builder;
     }
 
 
