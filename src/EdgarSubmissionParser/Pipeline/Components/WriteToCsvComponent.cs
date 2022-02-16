@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using AutoMapper;
-using ConsoleApp5.Model;
+using EdgarSubmissionParser.Model;
 using EdgarSubmissionParser.Pipeline.Payloads;
 using PipelineFramework.Abstractions;
 

@@ -1,19 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Reflection;
-using System.Xml.Serialization;
 using AutoMapper;
-using ConsoleApp5.Model;
 using EdgarSubmissionParser.Mapping;
 using EdgarSubmissionParser.Pipeline.Components;
 using EdgarSubmissionParser.Pipeline.Payloads;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
-using Microsoft.Extensions.Options;
 using PipelineFramework;
 using PipelineFramework.Abstractions;
 
+namespace EdgarSubmissionParser;
 
 public class Program
 {
@@ -57,5 +53,3 @@ public class Program
         logger.LogInformation("end");
     }
 }
-
-

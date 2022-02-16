@@ -1,4 +1,4 @@
-﻿using ConsoleApp5.Model;
+﻿using EdgarSubmissionParser.Model;
 
 namespace EdgarSubmissionParser.Pipeline.Payloads;
 

@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace EdgarSubmissionParser.Tests
+namespace EdgarSubmissionParser.Tests.Pipeline.Components
 {
     [TestClass]
     public class UnitTest1

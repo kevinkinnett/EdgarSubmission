@@ -1,8 +1,8 @@
-﻿namespace ConsoleApp5.Model;
+﻿namespace EdgarSubmissionParser.Model;
 
 // NOTE: Generated code may require at least .NET Framework 4.5 or .NET Core/Standard 2.0.
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://www.sec.gov/edgar/nport", IsNullable = false)]
@@ -41,7 +41,7 @@ public partial class edgarSubmission
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionHeaderData
@@ -94,7 +94,7 @@ public partial class edgarSubmissionHeaderData
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionHeaderDataFilerInfo
@@ -132,7 +132,7 @@ public partial class edgarSubmissionHeaderDataFilerInfo
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionHeaderDataFilerInfoFiler
@@ -155,7 +155,7 @@ public partial class edgarSubmissionHeaderDataFilerInfoFiler
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionHeaderDataFilerInfoFilerIssuerCredentials
@@ -193,7 +193,7 @@ public partial class edgarSubmissionHeaderDataFilerInfoFilerIssuerCredentials
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionHeaderDataFilerInfoSeriesClassInfo
@@ -232,7 +232,7 @@ public partial class edgarSubmissionHeaderDataFilerInfoSeriesClassInfo
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormData
@@ -316,7 +316,7 @@ public partial class edgarSubmissionFormData
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataGenInfo
@@ -566,7 +566,7 @@ public partial class edgarSubmissionFormDataGenInfo
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataGenInfoRegStateConditional
@@ -606,7 +606,7 @@ public partial class edgarSubmissionFormDataGenInfoRegStateConditional
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfo
@@ -960,7 +960,7 @@ public partial class edgarSubmissionFormDataFundInfo
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoBorrower
@@ -1016,7 +1016,7 @@ public partial class edgarSubmissionFormDataFundInfoBorrower
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoAggregateCondition
@@ -1056,7 +1056,7 @@ public partial class edgarSubmissionFormDataFundInfoAggregateCondition
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoAggregateConditionAggregateInfo
@@ -1111,7 +1111,7 @@ public partial class edgarSubmissionFormDataFundInfoAggregateConditionAggregateI
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoReturnInfo
@@ -1180,7 +1180,7 @@ public partial class edgarSubmissionFormDataFundInfoReturnInfo
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoReturnInfoMonthlyTotReturn
@@ -1252,7 +1252,7 @@ public partial class edgarSubmissionFormDataFundInfoReturnInfoMonthlyTotReturn
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon1
@@ -1292,7 +1292,7 @@ public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon1
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon2
@@ -1332,7 +1332,7 @@ public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon2
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon3
@@ -1372,7 +1372,7 @@ public partial class edgarSubmissionFormDataFundInfoReturnInfoOthMon3
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoMon1Flow
@@ -1428,7 +1428,7 @@ public partial class edgarSubmissionFormDataFundInfoMon1Flow
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoMon2Flow
@@ -1484,7 +1484,7 @@ public partial class edgarSubmissionFormDataFundInfoMon2Flow
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataFundInfoMon3Flow
@@ -1540,7 +1540,7 @@ public partial class edgarSubmissionFormDataFundInfoMon3Flow
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSec
@@ -1833,7 +1833,7 @@ public partial class edgarSubmissionFormDataInvstOrSec
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecIdentifiers
@@ -1871,7 +1871,7 @@ public partial class edgarSubmissionFormDataInvstOrSecIdentifiers
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecIdentifiersOther
@@ -1911,7 +1911,7 @@ public partial class edgarSubmissionFormDataInvstOrSecIdentifiersOther
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecIdentifiersIsin
@@ -1935,7 +1935,7 @@ public partial class edgarSubmissionFormDataInvstOrSecIdentifiersIsin
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecIssuerConditional
@@ -1975,7 +1975,7 @@ public partial class edgarSubmissionFormDataInvstOrSecIssuerConditional
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecDebtSec
@@ -2074,7 +2074,7 @@ public partial class edgarSubmissionFormDataInvstOrSecDebtSec
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecSecurityLending
@@ -2157,7 +2157,7 @@ public partial class edgarSubmissionFormDataInvstOrSecSecurityLending
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecSecurityLendingCashCollateralCondition
@@ -2197,7 +2197,7 @@ public partial class edgarSubmissionFormDataInvstOrSecSecurityLendingCashCollate
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataInvstOrSecSecurityLendingLoanByFundCondition
@@ -2237,7 +2237,7 @@ public partial class edgarSubmissionFormDataInvstOrSecSecurityLendingLoanByFundC
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataExplntrNotes
@@ -2260,7 +2260,7 @@ public partial class edgarSubmissionFormDataExplntrNotes
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataExplntrNotesExplntrNote
@@ -2300,7 +2300,7 @@ public partial class edgarSubmissionFormDataExplntrNotesExplntrNote
 }
 
 /// <remarks/>
-[System.SerializableAttribute()]
+[Serializable()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sec.gov/edgar/nport")]
 public partial class edgarSubmissionFormDataSignature

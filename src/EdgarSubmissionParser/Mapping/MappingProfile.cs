@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ConsoleApp5.Model;
+using EdgarSubmissionParser.Model;
 
 namespace EdgarSubmissionParser.Mapping;
 

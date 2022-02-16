@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp5.Model;
+﻿namespace EdgarSubmissionParser.Model;
 public class Output
 {
     public string Name { get; set; }

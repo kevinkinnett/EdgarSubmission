@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using ConsoleApp5.Model;
+using EdgarSubmissionParser.Model;
 using EdgarSubmissionParser.Pipeline.Payloads;
 using PipelineFramework.Abstractions;
 
