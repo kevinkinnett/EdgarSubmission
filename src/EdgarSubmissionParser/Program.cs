@@ -9,8 +9,8 @@ Console.WriteLine("Hello, World!");
 
 edgarSubmission submission;
 
-XmlSerializer serializer = new XmlSerializer(typeof(edgarSubmission));
-using (FileStream fileStream = new FileStream("Data/primary_doc.xml", FileMode.Open))
+var serializer = new XmlSerializer(typeof(edgarSubmission));
+using (var fileStream = new FileStream("Data/primary_doc.xml", FileMode.Open))
 {
     submission = (edgarSubmission)serializer.Deserialize(fileStream);
 }
@@ -37,22 +37,19 @@ var config = new MapperConfiguration(cfg =>
 var mapper = config.CreateMapper();
 var dto = mapper.Map<Output[]>(submission.formData.invstOrSecs);
 
-WriteCSV(dto, "Data/output.csv");
+WriteCsv(dto, "Data/output.csv");
 Console.WriteLine("end");
 
-void WriteCSV<T>(IEnumerable<T> items, string path)
+void WriteCsv<T>(IEnumerable<T> items, string path)
 {
     var itemType = typeof(T);
     var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
         .OrderBy(p => p.Name);
 
-    using (var writer = new StreamWriter(path))
-    {
-        writer.WriteLine(string.Join(", ", props.Select(p => p.Name)));
+    using var writer = new StreamWriter(path);
 
-        foreach (var item in items)
-        {
-            writer.WriteLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
-        }
-    }
+    writer.WriteLine(string.Join(", ", props.Select(p => p.Name)));
+
+    foreach (var item in items)
+        writer.WriteLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
 }
