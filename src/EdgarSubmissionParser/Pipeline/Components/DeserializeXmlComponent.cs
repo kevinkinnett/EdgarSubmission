@@ -1,9 +1,7 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
-using EdgarSubmissionParser.Model;
+﻿using EdgarSubmissionParser.Model;
 using EdgarSubmissionParser.Pipeline.Payloads;
 using PipelineFramework.Abstractions;
+using System.Xml.Serialization;
 
 namespace EdgarSubmissionParser.Pipeline.Components;
 
@@ -19,11 +17,12 @@ public class DeserializeXmlComponent : AsyncPipelineComponentBase<PipelinePayloa
 
     private static T DeserializeXml<T>(string path) where T : class
     {
-
         using var fileStream = new FileStream(path, FileMode.Open);
         var submission = new XmlSerializer(typeof(T)).Deserialize(fileStream)! as T;
 
         return submission;
     }
+
+
 }
 
