@@ -1,4 +1,5 @@
-﻿using EdgarSubmissionParser.Pipeline.Components;
+﻿using System;
+using EdgarSubmissionParser.Pipeline.Components;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -53,7 +54,7 @@ public class WriteToCsvComponentTests
         var result = WriteToCsvComponent.BuildCsvLog(list).ToString();
 
         // Assert
-        Assert.AreEqual("Property1, Property2\r\nfoo, bar\r\n", result);
+        Assert.AreEqual("Property1, Property2foo, bar", result.Replace(Environment.NewLine, ""));
     }
 }
 
