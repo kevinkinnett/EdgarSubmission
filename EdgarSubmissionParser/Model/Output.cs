@@ -1,33 +1,33 @@
 ﻿namespace ConsoleApp5.Model;
 public class Output
 {
-    public string NameField { get; set; }
+    public string Name { get; set; }
 
-    public string LeiField { get; set; }
+    public string Lei { get; set; }
 
-    public string TitleField { get; set; }
+    public string Title { get; set; }
 
-    public string CusipField { get; set; }
+    public string Cusip { get; set; }
 
-    public decimal BalanceField { get; set; }
+    public decimal Balance { get; set; }
 
-    public string UnitsField { get; set; }
+    public string Units { get; set; }
 
-    public string CurCdField { get; set; }
+    public string CurCd { get; set; }
 
-    public decimal ValUsdField { get; set; }
+    public decimal ValUsd { get; set; }
 
-    public decimal PctValField { get; set; }
+    public decimal PctVal { get; set; }
 
-    public string PayoffProfileField { get; set; }
+    public string PayoffProfile { get; set; }
 
-    public string AssetCatField { get; set; }
+    public string AssetCat { get; set; }
 
-    public string IssuerCatField { get; set; }
+    public string IssuerCat { get; set; }
 
-    public string InvCountryField { get; set; }
+    public string InvCountry { get; set; }
 
-    public string IsRestrictedSecField { get; set; }
+    public string IsRestrictedSec { get; set; }
 
-    public byte FairValLevelField { get; set; }
+    public byte FairValLevel { get; set; }
 }
