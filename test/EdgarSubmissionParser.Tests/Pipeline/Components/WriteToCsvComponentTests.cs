@@ -37,7 +37,7 @@ public class WriteToCsvComponentTests
     }
 
     [TestMethod]
-    public async Task CanBuildCsvLog()
+    public void CanBuildCsvLog()
     {
         // Arrange
         var list = new List<FooBar>()
